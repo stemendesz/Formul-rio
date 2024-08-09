@@ -10,28 +10,65 @@
 <body>
 
     <form>
+
         <div class="Formulário">
 
          <label for="nome">Nome</label>
-         <input typ="text" id="nome">
+         <input typ="text" id="nome" class="input-padrao" required>
+        
 
          <label for="sobrenome">Sobrenome</label>
-         <input type="text" id="sobrenome">
+         <input type="text" id="sobrenome" class="input-padrao" required>
 
          <label for="email">E-mail</label>
-         <input type="text" id="email">
+         <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
          
+         <label for="Telefone">Telefone</label>
+         <input type="tel" id="Telefone" class="input-padrao" required placeholder="(XX)XXXXX-XXXX">
+
          <label for="mensagem">Mensagem</label>
-         <textarea cols="70" rows="10" id="mensagem"></textarea>
+         <textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea></textarea>
+         
+         <fieldset>
+            <legend> Como prefere o nosso contato? </legend>
+            <label for="radio-email"><input type="radio" name="contato" value="Telefone" id="radio-telefone">Telefone</label>
+            <label for="raio whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsaap" checked> whatsapp </label>
+                </fieldset>
 
-         <input type="submit" value="Enviar Formulário">
 
+                <fieldset>
+                    <legend>Qual horário prefere ser atendido? </legend>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+            </fieldset>
+            
+            <label class="checkbox"><input type="checkbox" checked>Gostaria de receber as novidades por email?</label>
+
+            <input type="submit" value="Enviar Formulário">
+
+        
+
+        </div>
+
+
+
+
+
+
+
+         
 
 
 
 
         </div>
     </form>
-
+    <footer>
+          <p class="copyright">&copy; copyright Formulário - 2024</p>
+    </footer>
+ 
 </body>
 </html>
